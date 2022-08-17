@@ -1,9 +1,9 @@
 {
   "include": ["src", "types"],
   "compilerOptions": {
-    "module": "esnext",
-    "target": "esnext",
     "moduleResolution": "node",
+    "target": "es5",
+    "module": "es2020",
     "jsx": "preserve",
     "baseUrl": "./",
     /* paths - import rewriting/resolving */
@@ -24,6 +24,9 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "useDefineForClassFields": true
+    "useDefineForClassFields": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "downlevelIteration": true
   }
 }
