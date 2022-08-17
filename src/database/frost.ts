@@ -11,7 +11,10 @@ getDatabase
 const firebaseConfig = {
 }
 
-if(!Object.keys(firebaseConfig).length) throw new Error("Missing Firebase Configuration");
+if(!Object.keys(firebaseConfig).length) {
+    alert("Missing Firebase Configuration")
+    throw new Error("Missing Firebase Configuration");
+}
 
 export const FrostApp = Frost.initialize(firebaseConfig, {
 
